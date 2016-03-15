@@ -31,7 +31,7 @@
 			<span class="article2-time">文章发表时间</span>
 			<div class="article2-content">
 				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-				<img src="image/task1_img.png" alt="文章插图">
+				<img src="image/task1_img.png" alt="文章插图" />
 				<ul class="article2-list">
 					<li>列表项目一</li>
 					<li>列表项目二</li>
@@ -41,29 +41,27 @@
 					<h3>图片</h3>
 					<dl>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
 						<dd>好看的图片</dd>
-						<dd><img src="image/task1_img.png" alt="文章插图"></dd>
-					</dl>
-						
+						<dd><img src="image/task1_img.png" alt="文章插图" /></dd>
+					</dl>	
 				</div>
-				
 			</div>
 
 			<div class="article3">
@@ -117,25 +115,36 @@
 		</div>
 	</div>
 
+
 	<div id="sidebar">
 		<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
 		<div class="regist">
 			<h3>侧栏注册窗口标题</h3>
 			<form action="#" method="post">
-				<label for="email">请输入邮箱地址：</label>
-				<input type="text" name="email" id="email">
+				<p>
+					<label for="email">
+						请输入邮箱地址：<input type="text" name="email" id="email" />
+					</label>
+				</p>
 				<p class="email-tip">邮箱地址请按要求格式输入</p>
-				<label for="password1">请输入密码：</label>
-				<input type="text" name="password1" id="password1">
-				<label for="password2">请重复输入密码：</label>
-				<input type="text" name="password2" id="password2">
+
+				<p>
+					<label for="password">
+						请输入密码：<input type="text" name="password" id="password" />
+					</label>
+					<label for="repeat-pwd">
+						请重复输入密码：<input type="text" name="repeatPwd" id="repeat-pwd" />
+					</label>		
+				</p>
 				<p class="pwd-tip">密码请为6-16位英文数字</p>
-				<label >性别：</label>
-				<input type="radio" name="gender" id="male" value="男">
+
+				<span>性别：</span>
+				<input type="radio" name="gender" id="male" value="男" />
 				<label for="male">男</label>
-				<input type="radio" name="gender" id="female" value="女">
+				<input type="radio" name="gender" id="female" value="女" />
 				<label for="female">女</label>
-				<label >城市：</label>
+
+				<span>城市：</span>
 				<select name="city" id="city">
 					<option value="北京" selected="selected">北京</option>
 					<option value="上海">上海</option>
@@ -144,17 +153,24 @@
 					<option value="香港">香港</option>
 					<option value="哈尔滨">哈尔滨</option>
 				</select>
-				<label >爱好：</label>
-				<input type="checkbox" id="sport" name="sport" value="运动"><label for="sport">运动</label>
-				<input type="checkbox" id="art" name="art" value="艺术"><label for="art">艺术</label>
-				<input type="checkbox" id="science" name="science" value="科学"><label for="science">科学</label>
-				<label for="person-info">个人描述：</label>
+
+				<span>爱好：</span>
+				<label for="sport">
+					<input type="checkbox" id="sport" name="sport" value="运动" />运动
+				</label>
+				<label for="art">
+					<input type="checkbox" id="art" name="art" value="艺术" />艺术
+				</label>
+				<label for="science">
+					<input type="checkbox" id="science" name="science" value="科学" />科学
+				</label>
+
+				<span>个人描述：</span>
 				<textarea name="personInfo" id="person-info">这是一个多行输入框，输入您的个人描述</textarea>
-				<input type="submit" name="sub" value="确认提交">
-			</form>
-			
-		</div>
-		
+
+				<input type="submit" name="sub" value="确认提交" />
+			</form>	
+		</div>	
 	</div>
 
 	<div id="footer">版权所有&copy;</div>
