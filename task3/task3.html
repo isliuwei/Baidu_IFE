@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <style>
+        body{
+            background: #eee;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3,h4{
+            font-size: 16px;
+            text-align: center;
+        }
+        ul,ol{
+            list-style-type: none;
+        }
+        #container{
+            margin: 20px;
+            padding: 20px;
+            background: #eee;
+            border: 1px solid #999;
+        }
+        .left{
+            width: 158px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #999;
+            float: left;
+        }
+        .left .team-logo{
+            width: 78px;
+            height: 78px;
+            float: left;
+            border: 1px solid #999;
+            background: #eee;
+            /*display: table-cell;*/
+            /*vertical-align: middle;*/
+        }
+        .left .team-logo h3{
+            float: left;
+            line-height: 0;
+        }
+
+        .right{
+            float: right;
+            padding: 20px;
+            width: 78px;
+            height: 378px;
+            background: #fff;
+            border: 1px solid #999;
+        }
+        .right .photo-list li{
+            width: 78px;
+            height: 78px;
+            border: 1px solid #999;
+            margin-bottom: 20px;
+            background: #eee;
+        }
+        .center{
+            border: 1px solid #999;
+            padding: 20px;
+            margin-left: 240px;
+            margin-right: 160px;
+            line-height: 4em;
+
+        }
+
+        /*.clear{*/
+            /*clear: both;*/
+        /*}*/
+
+        /*不改变DOM结构清除浮动的方法*/
+        /*方法一(推荐)*/
+        /*用法:在需要清除浮动的地方加上.clearfix属性(class="clearfix")*/
+        .clearfix:after{
+            content: "";
+            display: block;
+            visibility: hidden;
+            height: 0;
+            clear: both;
+        }
+        .clearfix{
+            *+height: 1%;
+        }
+
+        /*方法二(国外)*/
+        .clearfix{
+            overflow: auto;
+            _height: 1%;
+        }
+
+        /*方法三*/
+        .clearfix{
+            overflow: hidden;
+            _zoom: 1;
+        }
+
+
+        /*.clearfix{*/
+            /*overflow: auto;*/
+            /*_height:1%;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+
+    <div id="container" class="clearfix">
+        <div class="left">
+            <div class="team-logo">
+                <h4>团队logo 80*80</h4>
+            </div>
+            <h3>团队名称</h3>
+        </div>
+        <div class="right">
+            <ul class="photo-list">
+                <li>
+                    <h4>个人logo 80*80</h4>
+                </li>
+                <li>
+                    <h4>个人logo 80*80</h4>
+                </li>
+                <li>
+                    <h4>个人logo 80*80</h4>
+                </li>
+                <li>
+                    <h4>个人logo 80*80</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad asperiores consequuntur earum, enim, hic inventore libero neque, qui repudiandae vel vitae voluptas? Consectetur distinctio ducimus maxime, obcaecati velit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur beatae cum dolorum esse explicabo, facere fugiat ipsam labore laborum minima modi, nostrum perferendis repellat temporibus. Optio reiciendis repellendus sed?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aspernatur distinctio ea excepturi impedit ipsa iusto molestiae, mollitia neque nesciunt placeat possimus rem sapiente sed veritatis vero voluptatibus voluptatum!</p>
+        </div>
+    </div>
+
+</body>
+</html>

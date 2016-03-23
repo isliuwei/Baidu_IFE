@@ -1,0 +1,170 @@
+/*****样式重置*****/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+/*****  title  *****/
+body{
+    background: #DEDEDE;
+    font-family: "Microsoft Yahei";
+}
+
+#sidebar,.article-wrap{
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -ms-box-shadow: 5px 5px 5px #888;
+    -o-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+.first-title{
+    color: #000;
+    padding: 0 0 20px 20px;
+}
+.second-title{
+    color: #5B5851;
+    padding: 0 0 20px 20px;
+}
+.article-author,.article-time{
+    color: #5B5851;
+    font-size: 16px;
+    display: block;
+    float: left;
+    padding: 0 0 10px 20px;
+}
+p{
+    text-indent: 2em;
+    line-height: 1.6em;
+    margin: 0 20px;
+    font-size: 16px;
+}
+.article-info{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.article-content img{
+    margin: 20px;
+}
+.no-style{
+    list-style-type: none;
+}
+.content-list{
+    margin-left: 40px;
+    line-height: 30px;
+}
+.content-order-list{
+    margin-left: 80px;
+    line-height: 30px;
+}
+table{
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #E6E6E6;
+    border-collapse: collapse;  /*border-collapse 属性设置表格的边框是否被合并为一个单一的边框*/
+}
+caption{
+    text-align: left; 
+}
+thead{
+    background: #333;
+    color: #fff;   
+}
+th,td{
+    padding: 5px;
+    border: 1px solid #E6E6E6;
+}
+tfoot{
+    background: #E6E6E6;
+    font-weight: 900;
+}
+
+
+#main .title{
+    width: 100%;
+    min-height: 60px;
+    background: #333;
+    position: relative;
+}
+#main .title img{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#main .web-nav{
+    /*display: inline-block;*/
+    list-style-type: disc;
+    margin-right: 20px;
+    float: right;
+}
+#main .web-nav li{
+    float: left;
+    font-size: 10px;
+    margin-right: 20px;
+}
+#main .web-nav li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+#main .web-nav li a:hover{
+    color: #9F9589;
+}
+#main .article-img h3{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#main .article-img-list img{
+    max-width: 300px;
+}
+#main .article-img-list li{
+    text-align: center;
+    width: 30%;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #CBCBCB;
+    margin-left: 60px;
+    margin-bottom: 20px;
+
+}
+#main .article-img-list li h4{
+    padding: 10px 0;
+    text-align: center;
+}
+#sidebar p{
+    margin: 0 auto;
+}
+#sidebar h3{
+    font-size: 16px;
+    margin-left: 20px;
+    height: 35px;
+    line-height: 35px;
+    padding: 5px;
+    border-left: 3px solid #ccc;  
+}
+#sidebar .regist{
+    width: 40%;
+    text-align: right;
+}
+#sidebar .tip{
+    color: #ccc;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
